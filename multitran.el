@@ -846,7 +846,37 @@ DIRECTION is one of 'next or 'prev."
     ))
 
 (provide 'multitran)
+;;; ellit-org: usage
+;;
+;; * Exaple of usage with keys bindsings
+;; #+begin_src elisp
 
+;; (defun my/multitran-at-pos-en (pos)
+;;   (interactive (list (point)))
+;;   (setq multitran-languages '("English" . "Russian") )
+;;   (multitran-at-pos pos)
+;;   )
+
+;; (defun my/multitran-at-pos-ch (pos)
+;;   (interactive (list (point)))
+;;   (setq multitran-languages '("Chinese" . "English") )
+;;   (multitran-at-pos pos)
+;;   )
+
+;; (defun my/multitran-at-pos-ru (pos)
+;;   (interactive (list (point)))
+;;   (setq multitran-languages '("Russian" . "English") )
+;;   (multitran-at-pos pos)
+;;   )
+
+;; (defun my/multitran()
+;;   (local-set-key (kbd "C-c t e") 'my/multitran-at-pos-en )
+;;   (local-set-key (kbd "C-c t c") 'my/multitran-at-pos-ch )
+;;   (local-set-key (kbd "C-c t r") 'my/multitran-at-pos-ru )
+;;   )
+;; (add-hook 'org-mode-hook 'my/multitran)
+
+;; #+end_src
 ;;; ellit-org: history
 ;;
 ;; * History
